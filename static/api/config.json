@@ -1,0 +1,52 @@
+{
+    "totalList": "https://corona.lmao.ninja/v2/all?yesterday=false",
+    "getCountry": "https://geolocation-db.com/json",
+    "allCountriesData": "https://corona.lmao.ninja/v2/countries?yesterday=false",
+    "faqs": [
+        {
+            "id": 1,
+            "question": "What is a coronavirus?",
+            "answer": "Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19."
+        },
+        {
+            "id": 2,
+            "question": "What is COVID-19?",
+            "answer": "COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019."
+        },
+        {
+            "id": 3,
+            "question": "What are the symptoms of COVID-19?",
+            "answer": "Symptoms include shortness of breath or cough, with or without a fever. In some cases, the virus can cause severe pneumonia. From what we know now about COVID-19, the symptoms can start between 2 and 14 days from exposure to the virus."
+        },
+        {
+            "id": 4,
+            "question": "How does COVID-19 spread?",
+            "answer": "This can happen when a person comes into contact with the respiratory secretions of an infected person, for example through coughing or sneezing. Spread of this coronavirus from person-to-person is usually between close contacts. Close contacts are usually defined as those people who have been face-to-face with a person infected with the virus for at least 15 minutes or been in the same closed space for at least 2 hours with an infected person. Spread of this coronavirus can also occur through touching objects or surfaces (such as door handles or tables) contaminated from a cough or sneeze from a person with a confirmed infection, and then touching your mouth or face."
+        },
+        {
+            "id": 5,
+            "question": "Should I be tested if I don’t have symptoms?",
+            "answer": "No. There is no reason to be tested for COVID-19 if you do not have symptoms."
+        },
+        {
+            "id": 6,
+            "question": "Why won’t I get tested if I don’t have symptoms?",
+            "answer": "In the early stages of infection (before people have symptoms), it may not be possible to detect the virus. Testing when you do not have symptoms could give a false negative result."
+        },
+        {
+            "id": 7,
+            "question": "What is the treatment for COVID-19?",
+            "answer": "There is no specific treatment for COVID-19 and, in most cases, symptoms will resolve on their own."
+        },
+        {
+            "id": 8,
+            "question": "Is there a vaccine?",
+            "answer": "There are currently no available vaccines for COVID-19."
+        },
+        {
+            "id": 9,
+            "question": "What should I do if I come into contact with a person with confirmed COVID-19 infection?",
+            "answer": "Your Public Health Unit will contact you if you are a close contact of someone who has been confirmed to have COVID-19. You will be asked to stay isolated for 14 days since you last had contact with the infected person, and to report any symptoms to the Public Health Unit. If you develop respiratory illness symptoms while in self-isolation you will need to contact your local Public Health Unit for advice. Let them know you are in self-isolation due to suspected COVID-19 infection."
+        }
+    ]
+}

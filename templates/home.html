@@ -1,0 +1,134 @@
+{% extends 'scaffolding.html' %} {% block title %} Information on Covid19 {%
+endblock %} {% block content %}
+<section class="col-12 py-5">
+    <div class="container">
+        <div class="col-12">
+            <div class="row">
+                <h6 class="col-12 text-center mb-3">
+                    You're visiting us from {{ country["country_name"] }}.
+                    Here's the collated data. The data was last updated on {{
+                    lastUpdated.split()[0] }} at {{ lastUpdated.split()[1] }}
+                    hrs
+                </h6>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock totalCases px-3 py-3">
+                        {{ countrySpecificData["cases"] }}<span
+                            >Number of Infected Cases</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                        class="homeContentBlock homeContentBlock activeCases px-3 py-3"
+                    >
+                        {{ countrySpecificData["active"] }}<span
+                            >Number of Active Cases</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock deathCases px-3 py-3">
+                        {{ countrySpecificData["deaths"] }}<span
+                            >Number of Deaths</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock recoveredCases px-3 py-3">
+                        {{ countrySpecificData["recovered"] }}<span
+                            >Number of Recovered Cases</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock tests px-3 py-3">
+                        {{ countrySpecificData["tests"] }}<span
+                            >Number of Tests Conducted</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock todayCases px-3 py-3">
+                        {{ countrySpecificData["todayCases"] }}<span
+                            >Number of Cases Today</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock testsPerOneMillion px-3 py-3">
+                        {{ countrySpecificData["testsPerOneMillion"] }}<span
+                            >Tests per Million</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock casesPerOneMillion px-3 py-3">
+                        {{ countrySpecificData["casesPerOneMillion"] }}<span
+                            >Cases per Million</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="row">
+                <h6 class="col-12 text-center mb-3">
+                    Data from across the globe:
+                </h6>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock totalCases px-3 py-3">
+                        {{ data["cases"] }}<span>Number of Infected Cases</span>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div
+                        class="homeContentBlock homeContentBlock activeCases px-3 py-3"
+                    >
+                        {{ data["active"] }}<span>Number of Active Cases</span>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock deathCases px-3 py-3">
+                        {{ data["deaths"] }}<span>Number of Deaths</span>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock recoveredCases px-3 py-3">
+                        {{ data["recovered"] }}<span
+                            >Number of Recovered Cases</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock tests px-3 py-3">
+                        {{ data["tests"] }}<span
+                            >Number of Tests Conducted</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock todayCases px-3 py-3">
+                        {{ data["todayCases"] }}<span
+                            >Number of Cases Today</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock testsPerOneMillion px-3 py-3">
+                        {{ data["testsPerOneMillion"] }}<span
+                            >Tests per Million</span
+                        >
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="homeContentBlock casesPerOneMillion px-3 py-3">
+                        {{ data["casesPerOneMillion"] }}<span
+                            >Cases per Million</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

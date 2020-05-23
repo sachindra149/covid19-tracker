@@ -1,0 +1,33 @@
+{% extends 'scaffolding.html' %} {% block title %} Information on Covid19 {%
+endblock %} {% block content %}
+<section class="col-12 py-5">
+    <div class="container">
+        <div class="col-12">
+            <div class="row">
+                <h3 class="col-12 text-center mb-3">
+                    Frequently Asked Questions
+                </h3>
+                <div class="col-12 pt-4">
+                    <div class="row">
+                        <ul class="faqs">
+                            {% for i in faqs %}
+                            <li class="col-12 pb-3">
+                                <a
+                                    class="pt-3"
+                                    href="#"
+                                    id="question{{i['id']}}"
+                                    >{{ i["question"] }}</a
+                                >
+                                <div class="mt-3" id="answer{{ i['id'] }}">
+                                    {{ i["answer"] }}
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

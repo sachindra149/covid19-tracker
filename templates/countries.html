@@ -1,0 +1,46 @@
+{% extends 'scaffolding.html' %} {% block title %} Country Wise Information on
+Covid19 {% endblock %} {% block content %}
+<section class="col-12">
+    <div class="container">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 pt-4">
+                    <div class="row">
+                        <table id="example" class="display">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Country</th>
+                                    <th>Total Cases</th>
+                                    <th>Active Cases</th>
+                                    <th>Cases per Million</th>
+                                    <th>Tests per Million</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for i in countryRelatedData %}
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="{{ i['countryInfo']['flag'] }}"
+                                            title="{{ i['country'] }}"
+                                            alt="{{ i['country'] }}"
+                                            width="36"
+                                        />
+                                    </td>
+                                    <td>{{ i['country'] }}</td>
+                                    <td>{{ i['cases'] }}</td>
+                                    <td>{{ i['active'] }}</td>
+                                    <td>{{ i['casesPerOneMillion'] }}</td>
+                                    <td>{{ i['testsPerOneMillion'] }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
